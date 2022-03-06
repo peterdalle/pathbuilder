@@ -16,7 +16,7 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/gituser/test-tackage",
     license='MIT',
-    python_requires='>=3.8',
+    python_requires='>=3.7',
     install_requires=[],
     classifiers= [
         "Development Status :: 4 - Beta",

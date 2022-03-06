@@ -17,7 +17,7 @@ pip install pathbuilder
 Development version:
 
 ```bash
-pip install git+https://github.com/peterdalle/pathbuilder.git@v0.9.0
+pip install git+https://github.com/peterdalle/pathbuilder.git@v0.9.1
 ```
 
 ## Example
