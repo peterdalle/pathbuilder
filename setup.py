@@ -18,12 +18,11 @@ setup(
     license='MIT',
     python_requires='>=3.8',
     install_requires=[],
-        classifiers= [
-            "Development Status :: 3 - Alpha",
-            "Intended Audience :: Education",
-            "Programming Language :: Python :: 2",
-            "Programming Language :: Python :: 3",
-            "Operating System :: MacOS :: MacOS X",
-            "Operating System :: Microsoft :: Windows",
-        ]
+    classifiers= [
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Developers",
+        "Programming Language :: Python :: 3",
+        "Operating System :: OS Independent",
+        "Topic :: Utilities",
+    ]
 )
