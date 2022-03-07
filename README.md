@@ -2,7 +2,7 @@
 
 PathBuilder is a small Python package that generates a path and creates the physical folder directory using keywords in the path.
 
-For example, `/path/{year}/file.txt` translates into `/path/2022/file.txt`. 
+For example, `/path/{year}/report.txt` translates into `/path/2022/report.txt`. 
 
 You can also add your own keywords.
 
@@ -25,14 +25,14 @@ pip install git+https://github.com/peterdalle/pathbuilder.git@v0.9.1
 ```py
 from pathbuilder import PathBuilder
 
-db = PathBuilder("/path/{year}/file.txt")
+pb = PathBuilder("/path/{year}/report.txt")
 
-print(db.fullname)  # /path/2022/file.txt
-print(db.path)      # /path/2022
-print(db.filename)  # file.txt
+print(pb.fullname)  # /path/2022/report.txt
+print(pb.path)      # /path/2022
+print(pb.filename)  # report.txt
 
 # Creates /path/2022 if it does not exist
-db.create_directory()
+pb.create_directory()
 ```
 
 ## Example with keywords
@@ -42,13 +42,13 @@ The keyword `{project}` below is replaced with the keyword arguments ([**kwargs]
 ```py
 from pathbuilder import pathbuilder
 
-db = PathBuilder("/Downloads/{project}/{year}.txt", project="alpha")
+pb = PathBuilder("/company/{project}/{year}.txt", project="alpha")
 
-print(db.fullname)  # /Downloads/alpha/2022.txt
-print(db.path)      # /Downloads/alpha
-print(db.filename)  # 2022.txt
+print(pb.fullname)  # /company/alpha/2022.txt
+print(pb.path)      # /company/alpha
+print(pb.filename)  # 2022.txt
 
-db.create_directory()
+pb.create_directory()
 ```
 
 ## Documentation
