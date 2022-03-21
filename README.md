@@ -40,7 +40,7 @@ pb.create_directory()
 The keyword `{project}` below is replaced with the keyword arguments ([**kwargs](https://docs.python.org/3/tutorial/controlflow.html#keyword-arguments)) with the same name.
 
 ```py
-from pathbuilder import pathbuilder
+from pathbuilder import PathBuilder
 
 pb = PathBuilder("/company/{project}/{year}.txt", project="alpha")
 
