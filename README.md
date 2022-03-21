@@ -17,7 +17,7 @@ pip install pathbuilder
 Development version:
 
 ```bash
-pip install git+https://github.com/peterdalle/pathbuilder.git@v0.9.2
+pip install git+https://github.com/peterdalle/pathbuilder.git@v0.9.3
 ```
 
 ## Example
@@ -67,6 +67,7 @@ Date/time keyword | Translates into
 `{minute}` | Minute 0-59
 `{second}` | Second 0-59
 `{month0}` | Month with zero padding (01-12)
+`{weekday0}` | Weekday with zero padding (01-07)
 `{day0}` | Day with zero padding (01-31)
 `{hour0}` | Hour with zero padding (00-23)
 `{minute0}` | Minute with zero padding (00-59)

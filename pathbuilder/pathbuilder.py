@@ -27,7 +27,7 @@ class PathBuilder():
             "minute": datetime.now().minute,
             "second": datetime.now().second,
             "month0": datetime.now().strftime("%m"),
-            "weekday0": datetime.now().date().weekday() + 1,  # identical to "weekday", but kept for consistency with naming scheme
+            "weekday0": "0" + str(datetime.now().date().weekday() + 1),
             "day0": datetime.now().strftime("%d"),
             "hour0": datetime.now().strftime("%H"),
             "minute0": datetime.now().strftime("%M"),

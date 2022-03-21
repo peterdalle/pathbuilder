@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
   
 setup(
     name="pathbuilder",
-    version="0.9.2",
+    version="0.9.3",
     author="Peter M. Dahlgren",
     author_email="peterdalle@gmail.com",
     packages=find_packages(),
