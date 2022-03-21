@@ -45,12 +45,12 @@ class PathBuilder():
         for keyword in [key for key in reserved]:
             function = reserved[keyword]
             self._add_builtin_keyword(keyword, function)
-        return self._add_custom_keywords(filename)
+        return self._replace_keywords(filename)
 
     def _add_builtin_keyword(self, key: str, value: str) -> None:
         self._kwargs = {**self._kwargs, key: value}
 
-    def _add_custom_keywords(self, text: str) -> str:
+    def _replace_keywords(self, text: str) -> str:
         for key in self._kwargs:
             value = self._kwargs[key]
             if not (isinstance(value, str) or isinstance(value, int)):
