@@ -61,6 +61,7 @@ Date/time keyword | Translates into
 `{time}` | Time in `HH-MM` format in 24 hours clock (e.g. 23-44)
 `{year}` | Year in `yyyy` format
 `{month}` | Month 1-12
+`{weekday}` | Weekday 1-7 (1=Monday to 7=Sunday)
 `{day}` | Day 1-31
 `{hour}` | Hour 0-23
 `{minute}` | Minute 0-59
